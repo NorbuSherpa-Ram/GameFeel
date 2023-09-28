@@ -172,7 +172,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19ff3f121c8ff504ba3f8aac88c4802d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myFx: {fileID: -8940061799832784021}
   knockbackForce: {x: 10, y: 2.5}
   facingDirection: 1
   moveSpeed: 5
@@ -192,9 +191,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flashMaterial: {fileID: 2100000, guid: 30de451105fd9ee4895eaefe1e325559, type: 2}
-  splatter: {fileID: 2376743483228248041, guid: a7a7d110f18681f4e8a3bd848299540a, type: 3}
-  splatParticle: {fileID: 3052417740439657179, guid: f466431b1b009ae4cb30b66efda1f5b6, type: 3}
+  deathRemaining: {fileID: 2376743483228248041, guid: a7a7d110f18681f4e8a3bd848299540a, type: 3}
+  deathParticle: {fileID: 3052417740439657179, guid: f466431b1b009ae4cb30b66efda1f5b6, type: 3}
   mySR: {fileID: 7564454557696005338}
+  defaultColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &5153281642299242202
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,10 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6802756368236662423}
-  - component: {fileID: -5611149099131491127}
   - component: {fileID: 3373200371414082845}
   - component: {fileID: 5872552506324704189}
   - component: {fileID: 5574385524886687785}
+  - component: {fileID: -5611149099131491127}
+  - component: {fileID: 8446228549915160197}
   m_Layer: 6
   m_Name: Bullet
   m_TagString: Untagged
@@ -34,20 +35,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-5611149099131491127
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1786346922999139977}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 324da6bc5594197419d59cac9e0abd95, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _moveSpeed: 30
-  _damageAmount: 1
 --- !u!212 &3373200371414082845
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -67,7 +54,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 6a0900a8f0ab8384dac84a4057ff298e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -86,7 +73,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1492154511
-  m_SortingLayer: 2
+  m_SortingLayer: 1
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 39b0d2182806c4140bbbf97b328e93fd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -136,3 +123,31 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &-5611149099131491127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1786346922999139977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 324da6bc5594197419d59cac9e0abd95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathParticle: {fileID: 727603652291531508, guid: 1fd9a3ae5c7c3e5458045b96e83a4da0, type: 3}
+  _moveSpeed: 30
+  _damageAmount: 1
+--- !u!114 &8446228549915160197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1786346922999139977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09b896db711d2194b9d08b77fd8f2605, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeTime: 1
